@@ -5,24 +5,24 @@
 }
 
 body {
-    background-color: #070b14;
+    background-color: #070b14; /* Nền đen sâu */
     color: #e2e8f0;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Chakra Petch', sans-serif; /* Font chữ kỹ thuật nam tính */
     background-image: 
         linear-gradient(rgba(14, 165, 233, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
-    background-size: 30px 30px;
+    background-size: 30px 30px; /* Tạo lưới bản vẽ mô hình mờ ở nền */
     line-height: 1.6;
 }
 
-/* Thanh điều hướng mở rộng */
+/* Thanh điều hướng */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 3%;
+    padding: 18px 8%;
     background-color: #0b1324;
-    border-bottom: 2px solid #0ea5e9;
+    border-bottom: 2px solid #0ea5e9; /* Viền xanh dương công nghệ */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -31,21 +31,20 @@ body {
 .logo {
     font-family: 'Orbitron', sans-serif;
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #ffffff;
     letter-spacing: 1.5px;
 }
 
 .badge {
-    color: #facc15;
-    font-size: 1rem;
+    color: #facc15; /* Điểm nhấn vàng */
+    font-size: 0.9rem;
 }
 
 .navbar nav a {
     color: #94a3b8;
     text-decoration: none;
-    margin-left: 28px;
-    font-size: 1.05rem;
+    margin-left: 24px;
     font-weight: 700;
     letter-spacing: 1px;
     transition: 0.3s;
@@ -56,79 +55,78 @@ body {
     color: #facc15;
 }
 
-/* Phần mở đầu - Chữ to và nổi bật hơn */
+/* Phần mở đầu */
 .hero-banner {
     text-align: center;
-    padding: 55px 3% 35px;
+    padding: 50px 20px 30px;
 }
 
 .sub-tag {
     color: #38bdf8;
     font-family: 'Orbitron', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 4px;
-    margin-bottom: 12px;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 .hero-banner h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 3.1rem; /* Chữ tiêu đề to, hầm hố */
-    font-weight: 800;
+    font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #ffffff;
 }
 
 .highlight-yellow {
     color: #facc15;
-    text-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+    text-shadow: 0 0 15px rgba(250, 204, 21, 0.3);
 }
 
-/* Khung nội dung chính - Tràn màn hình (94% chiều ngang) */
+/* Khung nội dung chính */
 .container {
-    width: 94%;
-    max-width: 1600px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 0 60px;
+    padding: 0 20px 60px;
 }
 
 /* Khung hộp phong cách cơ khí / mô hình */
 .tech-box {
     background: linear-gradient(145deg, #0d172a, #09101d);
     border: 1px solid #1e3a8a;
-    border-left: 5px solid #0ea5e9;
-    padding: 32px;
-    margin-bottom: 35px;
+    border-left: 4px solid #0ea5e9;
+    padding: 28px;
+    margin-bottom: 30px;
     position: relative;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
+/* Góc trang trí màu vàng */
 .tech-box::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     border-top: 3px solid #facc15;
     border-right: 3px solid #facc15;
 }
 
 .box-header {
     font-family: 'Orbitron', sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: #38bdf8;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-bottom: 1px solid rgba(56, 189, 248, 0.2);
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
-/* Bố cục 2 cột Trang 1 */
+/* Bố cục 2 cột (Chữ bên cạnh Ảnh) */
 .profile-grid, .skill-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    gap: 35px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -137,14 +135,14 @@ body {
 }
 
 .info-line {
-    font-size: 1.4rem;
-    margin-bottom: 14px;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
 }
 
 .info-line span {
     color: #94a3b8;
-    font-size: 1.1rem;
-    margin-right: 10px;
+    font-size: 1rem;
+    margin-right: 8px;
 }
 
 .info-line strong {
@@ -153,31 +151,31 @@ body {
 
 .status-tag {
     display: inline-block;
-    margin-top: 12px;
-    padding: 6px 14px;
+    margin-top: 10px;
+    padding: 5px 12px;
     background: rgba(250, 204, 21, 0.1);
     border: 1px solid #facc15;
     color: #facc15;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 700;
 }
 
 h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #facc15;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .desc-text {
     color: #cbd5e1;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
 }
 
 /* Khung ảnh */
 .img-frame {
     border: 2px solid #0284c7;
-    padding: 6px;
+    padding: 5px;
     background: #060a12;
     position: relative;
     overflow: hidden;
@@ -185,7 +183,7 @@ h2 {
 
 .img-frame img {
     width: 100%;
-    height: 330px;
+    height: 260px;
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
@@ -197,271 +195,94 @@ h2 {
 
 /* Ảnh ngang cho phần lắp mô hình */
 .wide-frame {
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .wide-frame img {
-    height: 450px;
+    height: 360px;
 }
 
-/* Lưới 5 ảnh cân đối: Hàng 1 có 3 ảnh, Hàng 2 có 2 ảnh to giãn đều */
+/* Lưới 5 ảnh ở trang 2 */
 .gallery-5 {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 24px;
-}
-
-.gallery-5 .img-frame {
-    grid-column: span 2; /* 3 ảnh đầu mỗi ảnh chiếm 2 cột 😊 6 cột) */
-}
-
-.gallery-5 .img-frame:nth-child(4),
-.gallery-5 .img-frame:nth-child(5) {
-    grid-column: span 3; /* 2 ảnh cuối mỗi ảnh chiếm 3 cột 😊 6 cột) */
-}
-
-.gallery-5 .img-frame:nth-child(4) img,
-.gallery-5 .img-frame:nth-child(5) img {
-    height: 380px; /* 2 ảnh dưới cao hơn chút nhìn cho bề thế */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
 }
 
 .img-label {
     position: absolute;
-    bottom: 12px;
-    right: 12px;
+    bottom: 10px;
+    right: 10px;
     background: #070b14;
     color: #facc15;
-    border: 1px soli* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #070b14;
-    color: #e2e8f0;
-    font-family: 'Chakra Petch', sans-serif;
-    background-image: 
-        linear-gradient(rgba(14, 165, 233, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
-    background-size: 30px 30px;
-    line-height: 1.6;
-}
-
-/* Thanh điều hướng mở rộng */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 3%;
-    background-color: #0b1324;
-    border-bottom: 2px solid #0ea5e9;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 800;
-    font-size: 1.4rem;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-}
-
-.badge {
-    color: #facc15;
-    font-size: 1rem;
-}
-
-.navbar nav a {
-    color: #94a3b8;
-    text-decoration: none;
-    margin-left: 28px;
-    font-size: 1.05rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-
-.navbar nav a:hover,
-.navbar nav a.active {
-    color: #facc15;
-}
-
-/* Phần mở đầu - Chữ to và nổi bật hơn */
-.hero-banner {
-    text-align: center;
-    padding: 55px 3% 35px;
-}
-
-.sub-tag {
-    color: #38bdf8;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 4px;
-    margin-bottom: 12px;
-}
-
-.hero-banner h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.1rem; /* Chữ tiêu đề to, hầm hố */
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #ffffff;
-}
-
-.highlight-yellow {
-    color: #facc15;
-    text-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
-}
-
-/* Khung nội dung chính - Tràn màn hình (94% chiều ngang) */
-.container {
-    width: 94%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 0 60px;
-}
-
-/* Khung hộp phong cách cơ khí / mô hình */
-.tech-box {
-    background: linear-gradient(145deg, #0d172a, #09101d);
-    border: 1px solid #1e3a8a;
-    border-left: 5px solid #0ea5e9;
-    padding: 32px;
-    margin-bottom: 35px;
-    position: relative;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-}
-
-.tech-box::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid #facc15;
-    border-right: 3px solid #facc15;
-}
-
-.box-header {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.95rem;
-    color: #38bdf8;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
-    padding-bottom: 10px;
-}
-
-/* Bố cục 2 cột Trang 1 */
-.profile-grid, .skill-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 35px;
-    align-items: center;
-}
-
-.skill-grid {
-    grid-template-columns: 1fr 1.2fr;
-}
-
-.info-line {
-    font-size: 1.4rem;
-    margin-bottom: 14px;
-}
-
-.info-line span {
-    color: #94a3b8;
-    font-size: 1.1rem;
-    margin-right: 10px;
-}
-
-.info-line strong {
-    color: #ffffff;
-}
-
-.status-tag {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 6px 14px;
-    background: rgba(250, 204, 21, 0.1);
     border: 1px solid #facc15;
-    color: #facc15;
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-
-h2 {
+    padding: 2px 8px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.8rem;
+    font-size: 0.75rem;
+}
+
+/* Spotify & Chữ nghe nhạc vui vẻ */
+.spotify-wrap {
+    margin-top: 10px;
+}
+
+.chill-text {
+    text-align: center;
+    margin-top: 18px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
     color: #facc15;
-    margin-bottom: 12px;
+    letter-spacing: 2px;
 }
 
-.desc-text {
-    color: #cbd5e1;
-    font-size: 1.15rem;
+/* Nút bấm chuyển trang */
+.next-page-area {
+    text-align: center;
+    margin-top: 35px;
 }
 
-/* Khung ảnh */
-.img-frame {
-    border: 2px solid #0284c7;
-    padding: 6px;
-    background: #060a12;
-    position: relative;
-    overflow: hidden;
+.cyber-btn {
+    display: inline-block;
+    padding: 15px 32px;
+    background-color: #0284c7;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 2px solid #38bdf8;
+    box-shadow: 4px 4px 0px #facc15; /* Đổ bóng khối vàng cực chất */
+    transition: 0.2s;
 }
 
-.img-frame img {
-    width: 100%;
-    height: 330px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease;
+.cyber-btn:hover {
+    background-color: #facc15;
+    color: #070b14;
+    border-color: #facc15;
+    box-shadow: 4px 4px 0px #38bdf8;
 }
 
-.img-frame:hover img {
-    transform: scale(1.03);
+.cyber-btn.outline {
+    background-color: transparent;
+    color: #38bdf8;
 }
 
-/* Ảnh ngang cho phần lắp mô hình */
-.wide-frame {
-    margin-top: 20px;
+.cyber-btn.outline:hover {
+    background-color: #facc15;
+    color: #070b14;
 }
 
-.wide-frame img {
-    height: 450px;
+/* Tối ưu cho điện thoại */
+@media (max-width: 768px) {
+    .profile-grid, .skill-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-banner h1 {
+        font-size: 1.4rem;
+    }
+    .wide-frame img {
+        height: 220px;
+    }
 }
-
-/* Lưới 5 ảnh cân đối: Hàng 1 có 3 ảnh, Hàng 2 có 2 ảnh to giãn đều */
-.gallery-5 {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 24px;
-}
-
-.gallery-5 .img-frame {
-    grid-column: span 2; /* 3 ảnh đầu mỗi ảnh chiếm 2 cột 😊 6 cột) */
-}
-
-.gallery-5 .img-frame:nth-child(4),
-.gallery-5 .img-frame:nth-child(5) {
-    grid-column: span 3; /* 2 ảnh cuối mỗi ảnh chiếm 3 cột 😊 6 cột) */
-}
-
-.gallery-5 .img-frame:nth-child(4) img,
-.gallery-5 .img-frame:nth-child(5) img {
-    height: 380px; /* 2 ảnh dưới cao hơn chút nhìn cho bề thế */
-}
-
-.img-label {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    background: #070b14;
-    color: #facc15;
-    border: 1
+Bạn đã gửi
